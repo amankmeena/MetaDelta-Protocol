@@ -1,7 +1,7 @@
 const hre = require("hardhat");
 
 async function main() {
-  const Project = await hre.ethers.getContractFactory("QuantumBase");
+  const Project = await hre.ethers.getContractFactory("MetaDelta Protocol");
   const project = await Project.deploy();
   await project.waitForDeployment();
 
